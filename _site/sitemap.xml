@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/code-of-conduct</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/community</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/contact</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/enforcement</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/index</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/meetup</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/organisers</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/slack</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/thanks</loc>
+    </url>
+    
+    
+    
+    
+</urlset>
