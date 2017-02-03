@@ -341,11 +341,6 @@ footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   height: 140px;
 }
-footer nav {
-  position: relative;
-  margin: auto;
-  text-align: center;
-}
 footer a {
   background-image: none;
   text-decoration: none !important;
@@ -494,4 +489,27 @@ nav a.current {
     margin-top: 120px;
     margin-bottom: 0;
   }
+}
+
+
+
+// Custom stuff
+
+footer nav {
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+.organiser {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid black;
+}
+.organiser dt {
+  font-weight: bold;
+  margin-top: 1em;
+}
+.organiser dd {
+  margin-left: 40px;
 }
