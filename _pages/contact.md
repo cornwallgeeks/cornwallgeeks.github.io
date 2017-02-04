@@ -3,7 +3,7 @@ title: Contact
 layout: page
 ---
 
-{{ site.urgent_contact_text }}
+If it's urgent you can find other means of contacting Admins on the [Code of Conduct page](/code-of-conduct#contacting-admins). See the [Organisers page](/organisers) for more contact details.
 
 You can email us with this form or at [{{ site.author.email }}](mailto:{{ site.author.email }}).
 

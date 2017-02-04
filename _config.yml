@@ -10,10 +10,8 @@ description:
 
 author:
   name: Dan Reeves # Change this!
-
   # Necessary for contact page
   email: cornwallgeeks@gmail.com # Change this!
-
   # Optional text (html) to display after author name. Leave empty if you don't
   # want it.
   info:
@@ -29,15 +27,12 @@ lang: en
 # APPEREANCE #
 ##############
 
-urgent_contact_text: "If it's urgent you can find other means of contacting Admins on the [Code of Conduct page](/code-of-conduct#contacting-admins). See the [Organisers page](/organisers) for more contact details."
-
-
 # If you want to show the subtitle anywhere else than the front page, use
 # {% include subtitle.html %} to include it anywhere you want.
 show-subtitle: true
 display-social-icons: false
 
-# footer-text: This is the footer.<br><a href="http://steinvc.github.io/holo-alfa/">Holo Alfa</a> Jekyll theme crafted by <a href="http://steinvc.github.io/holo-alfa/">Stijn</a>.
+# footer-text: copyright/cc/public domain note here?
 
 # Preferably 64px in height. Leave empty = disable.
 logo-image: # /img/logo.png
@@ -87,24 +82,8 @@ disqus-shortname:
 
 # Use a complete url here, including http:// and such. Requiring just usernames
 # has been considered, but this is way more customizable.
-twitter:
-youtube:
-instagram:
-tumblr:
-facebook:
-google-plus:
-reddit:
-soundcloud:
-medium:
-linkedin:
-github:
-behance:
-codepen:
-dribbble:
-trello:
-stack-overflow:
-bitcoin:
-paypal:
+twitter: https://twitter.com/CornwallGeeks
+github: https://github.com/CornwallGeeks
 
 
 #####################
@@ -133,11 +112,7 @@ var_your_message: Your message
 
 # You don't have to change these.
 
-exclude: [vendor]
-highlighter: rouge
-kramdown:
-  input: GFM
-paginate_path: "/page-:num/"
+paginate_path: "/:num/"
 permalink: pretty
 defaults:
   -
