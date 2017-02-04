@@ -126,10 +126,11 @@ defaults:
 collections:
   posts:
     output: true
-    permalink: /blog/:title
+    permalink: /blog/:title/
   pages:
     output: true
-    permalink: /:title
+    permalink: /:title/
+    post_dirs: false
   organisers:
     output: false
 
