@@ -244,13 +244,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   margin: 0 auto;
   padding: 0 15px;
   max-width: 700px;
-  min-height: 100%;
+  min-height: calc(100% - 100px);
   margin-bottom: -141px;
-}
-.wrap::after {
-  content: "";
-  display: block;
-  height: 141px;
 }
 header {
   padding-top: 20px;
@@ -267,7 +262,6 @@ nav {
 article {
   margin-top: 30px;
 }
-article::after,
 header::after {
   margin: 50px 0;
   content: "•";
@@ -277,10 +271,11 @@ header::after {
   text-align: center;
   color: rgba(0, 240, 255, 0.4);
 }
-article:last-of-type::after {
+.wrap:last-of-type::after {
   content: "";
   margin-top: 80px;
-  margin-bottom: 0;
+  margin-bottom: 80px;
+  display: block;
 }
 a.read-more {
   display: inline-block;
@@ -430,7 +425,6 @@ nav a.current {
   table {
     margin: 40px auto;
   }
-  article::after,
   header::after {
     margin: 70px;
   }
@@ -462,7 +456,7 @@ nav a.current {
     margin: 90px auto;
   }
 }
-@media all and (min-width: 520px) {
+@media all and (min-width: 595px) {
   .website-title {
     text-align: left;
   }
@@ -484,32 +478,88 @@ nav a.current {
   h1 {
     font-size: 2.9em;
   }
-  article:last-of-type::after {
-    content: "";
-    margin-top: 120px;
-    margin-bottom: 0;
-  }
 }
 
 
 
-// Custom stuff
+/* Custom stuff */
 
+/* slack iframe in top nav */
+nav iframe {
+  padding: 5px;
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media all and (min-width: 595px) {
+  nav iframe {
+    margin: 0;
+    padding: 5px 8px;
+    display: inline-block;
+  }
+}
+
+/* override fix the footer/main smooshing together */
+.wrap {
+  margin-bottom: 0;
+}
+footer {
+  height: auto;
+}
+
+/* nicer footer styling + spacing */
+footer .inner {
+  padding: 40px;
+}
 footer nav {
   position: relative;
   margin: auto;
   text-align: center;
+  height: auto;
+  top: auto;
+  right: auto;
 }
 
+/* organiser block */
 .organiser {
   margin-top: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid black;
+  padding: 0.5em;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05)
 }
-.organiser dt {
-  font-weight: bold;
-  margin-top: 1em;
+.organiser img {
+  max-width: 100%;
+  display: block;
+  float: left;
+  margin: 10px;
 }
-.organiser dd {
-  margin-left: 40px;
+.organiser h2 {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  margin-left: 10px;
+}
+.organiser ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.organiser li {
+  padding: 0;
+  margin: 0;
+  margin-right: 0.5em;
+  float: left;
+  display: inline-block;
+}
+@media all and (max-width: 430px) {
+  .organiser img {
+    float: none;
+  }
+  .organiser li {
+    margin-left: 10px;
+  }
 }

@@ -5,21 +5,24 @@ layout: page
 
 {% for organiser in site.organisers %}
 <div class="organiser">
-    <dl>
-        <dt>Name</dt>
-            <dd>{{ organiser.name }}</dd>
+    {% if organiser.github %}
+        {% avatar user=organiser.github size=120 %}
+    {% endif %}
+    <h2>{{ organiser.name }}</h2>
+    <ul>
         {% if organiser.twitter %}
-            <dt>Twitter</dt>
-            <dd>
+            <li><strong>Twitter</strong>:
                 <a href="https://twitter.com/{{ organiser.twitter }}">@{{ organiser.twitter }}</a>
-            </dd>
+            </li>
         {% endif %}
         {% if organiser.email %}
-            <dt>Email</dt>
-            <dd>
+            <li><strong>Email</strong>:
                 <a href="mailto:{{ organiser.email }}">{{ organiser.email }}</a>
-            </dd>
+            </li>
         {% endif %}
-    </dl>
+        {% if organiser.github %}
+            <li><strong>GitHub</strong>: @{{ organiser.github }}</li>
+        {% endif %}
+    </ul>
 </div>
 {% endfor %}

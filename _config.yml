@@ -69,7 +69,7 @@ date_format: "%b %-d, %Y"
 
 # Minimal screen-width after which the navigation will change position from
 # vertical to horizontal.
-nav-breaking-point: 520px
+nav-breaking-point: 595px
 
 # Number of posts on each page.
 paginate: 3
@@ -157,3 +157,10 @@ collections:
     permalink: /:title
   organisers:
     output: false
+
+gems:
+   - jekyll-mentions
+   - jemoji
+   - jekyll-sitemap
+   - jekyll-feed
+   - jekyll-avatar
