@@ -13,7 +13,7 @@ much as possible. It is paired with the community's [Code of
 Conduct](/code-of-conduct), which includes the concrete enforcement steps.
 
 It is a living document, informed by new problems, new conflicts, and always
-strives to help make the WeAllJS community successful while including the voices
+strives to help make the Cornwall Geeks community successful while including the voices
 of those who are too often not heard.
 
 ## Guiding Principles
