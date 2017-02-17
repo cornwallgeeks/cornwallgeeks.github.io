@@ -555,6 +555,9 @@ footer nav {
   float: left;
   display: inline-block;
 }
+.friend li {
+  clear: left;
+}
 @media all and (max-width: 430px) {
   .organiser img,
   .friend img {
