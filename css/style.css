@@ -516,45 +516,58 @@ footer nav {
   right: auto;
 }
 
-/* organiser block */
-.organiser {
+/* organiser & friend block */
+.organiser,
+.friend {
   margin-top: 40px;
-  padding: 0.5em;
+  padding: .5em;
   overflow: hidden;
   border-radius: 4px;
-  border: 1px solid rgba({{ site.text-color }}, 0.1);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05)
+  border: 1px solid rgba({{ site.text-color }}, .1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .05)
 }
-.organiser img {
+.organiser img,
+.friend img {
   max-width: 100%;
   display: block;
   float: left;
   margin: 10px;
 }
-.organiser h2 {
+.organiser h2,
+.friend h2 {
   margin-top: 0.25em;
   margin-bottom: 0.25em;
   margin-left: 10px;
 }
-.organiser ul {
+.organiser ul,
+.friend ul {
   list-style: none;
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
   overflow: hidden;
 }
-.organiser li {
+.organiser li,
+.friend li {
   padding: 0;
   margin: 0;
-  margin-right: 0.5em;
+  margin-right: .5em;
   float: left;
   display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.friend li {
+  clear: left;
 }
 @media all and (max-width: 430px) {
-  .organiser img {
+  .organiser img,
+  .friend img {
     float: none;
   }
-  .organiser li {
+  .organiser li,
+  .friend li {
     margin-left: 10px;
   }
 }
