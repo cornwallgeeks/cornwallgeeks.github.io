@@ -554,6 +554,9 @@ footer nav {
   margin-right: .5em;
   float: left;
   display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .friend li {
   clear: left;
