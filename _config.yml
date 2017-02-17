@@ -137,6 +137,8 @@ collections:
     post_dirs: false
   organisers:
     output: false
+  friends:
+    output: false
 
 gems:
    - jekyll-mentions
