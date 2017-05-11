@@ -1,148 +1,77 @@
-
-# The name of your website.
+---
+title: Cornwallgeeks.Github.Io
+timezone: UTC
+collections:
+  friends:
+    title: Friends
+    output: false
+  organisers:
+    title: Organisers
+    output: false
+  pages:
+    title: Pages
+    output: true
+    permalink: "/:title/"
+    post_dirs: false
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    excerpt_separator: "<!--more-->"
 name: Cornwall Geeks
-
 description:
-  # Description of your site. This will show up in google.
-  meta: A gathering of like minded people to talk about geeky stuff; programming, design, and gaming.
-  # Description of your site. This will show up on the front page.
-  subtitle: A gathering of like minded people to talk about geeky stuff; programming, design, and gaming.
-
+  meta: A gathering of like minded people to talk about geeky stuff; programming,
+    design, and gaming.
+  subtitle: A gathering of like minded people to talk about geeky stuff; programming,
+    design, and gaming.
 author:
-  name: Dan Reeves # Change this!
-  # Necessary for contact page
-  email: cornwallgeeks@gmail.com # Change this!
-  # Optional text (html) to display after author name. Leave empty if you don't
-  # want it.
-  info:
-
-# url: https://cornwallgeeks.net
-
-# language attribute in <html> element.
+  name: Dan Reeves
+  email: cornwallgeeks@gmail.com
+  info: 
 lang: en
-
-
-
 incomplete: This page is incomplete. You can contribute on [GitHub](https://github.com/cornwallgeeks/cornwallgeeks.github.io)!
-
-# FROM THIS POINT ON EVERYTHING IS OPTIONAL
-
-##############
-# APPEREANCE #
-##############
-
-# If you want to show the subtitle anywhere else than the front page, use
-# {% include subtitle.html %} to include it anywhere you want.
 show-subtitle: true
 display-social-icons: false
-
-# footer-text: copyright/cc/public domain note here?
-
-# Preferably 64px in height. Leave empty = disable.
-logo-image: # /img/logo.png
-
-# Toolbar color for Chrome on Android.
+logo-image: 
 theme-color-attr: "#00f0ff"
-
-# Color of Microsoft live Tile.
 ms-tile-color: "#00f0ff"
-
-# Color used throughout the theme. Format: R, G, B.
-theme-color: 0, 240, 255 # Original: 0, 240, 255
-
-# Text color used throughout the theme. Format: R, G, B.
-text-color: 0, 0, 0 # Original: 0, 0, 0
-
-# Background color used throughout the theme. Format: R, G, B.
-# Note: if you change the background color AND you use cover images, you should
-#       also change the CSS gradient in "_includes\gradient.css" to match the
-#       background color. Edit and copy it from here:
-#       http://www.colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100
-background-color: 255, 255, 255 # Original: 255, 255, 255
-
+theme-color: 0, 240, 255
+text-color: 0, 0, 0
+background-color: 255, 255, 255
 display-author-post-page: true
 display-author-front-page: true
-
-# http://alanwsmith.com/jekyll-liquid-date-formatting-examples
 date_format: "%b %-d, %Y"
-
-# Minimal screen-width after which the navigation will change position from
-# vertical to horizontal.
 nav-breaking-point: 595px
-
-# Number of posts on each page.
 paginate: 3
-
-# Display links for the previous and next post on post pages.
 display-next-prev-post: false
-
-# Leave empty if you don't want comments on post pages.
-disqus-shortname:
-
-
-################
-# SOCIAL ICONS #
-################
-
-# Use a complete url here, including http:// and such. Requiring just usernames
-# has been considered, but this is way more customizable.
+disqus-shortname: 
 twitter: https://twitter.com/CornwallGeeks
 github: https://github.com/CornwallGeeks
-
-
-#####################
-# CUSTOMIZABLE TEXT #
-#####################
-
-# Useful for translating into other languages.
-
 var_on_the_web: On the web
-var_read: Read # Text after each post summary on the homepage.
+var_read: Read
 var_newer: Newer
 var_older: Older
 var_next_post: Next post
 var_previous_post: Previous post
 var_less_than_a_minute_read: Less than a minute read
-var_min_read: min read # Text after reading time. Example: 5 min read.
+var_min_read: min read
 var_post_by: Post by
 var_guest_post_by: Guest post by
 var_your_email: Your email
 var_your_message: Your message
-
-
-##################
-# BUILD SETTINGS #
-##################
-
-# You don't have to change these.
-
 paginate_path: "/:num/"
 permalink: pretty
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      excerpt_separator: "<!--more-->"
-
-collections:
-  posts:
-    output: true
-    permalink: /blog/:title/
-  pages:
-    output: true
-    permalink: /:title/
-    post_dirs: false
-  organisers:
-    output: false
-  friends:
-    output: false
-
 gems:
-   - jekyll-mentions
-   - jemoji
-   - jekyll-sitemap
-   - jekyll-feed
-   - jekyll-avatar
+- jekyll-mentions
+- jemoji
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-avatar

@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Thanks
+layout: page
 ---
 
 Thanks for your message!
