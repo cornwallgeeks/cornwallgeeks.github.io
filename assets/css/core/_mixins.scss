@@ -1,0 +1,32 @@
+@mixin placeholder-img {
+		background-image: url('../svg/img-placeholder.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+}
+
+@mixin background-contain {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+@mixin background-cover {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+@mixin grad-vert($color-1, $opacity-1, $position-1, $color-2, $opacity-2, $position-2) {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1c1e22+0,1c1e22+21&0+0,0.6+21 */
+	background: -moz-linear-gradient(top, rgba($color-1, $opacity-1) $position-1, rgba($color-2, $opacity-2) $position-2); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba($color-1, $opacity-1) $position-1,rgba($color-2, $opacity-2) $position-2); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba($color-1, $opacity-1) $position-1,rgba($color-2, $opacity-2) $position-2); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@mixin grad-horiz($color-1, $opacity-1, $position-1, $color-2, $opacity-2, $position-2) {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1c1e22+0,1c1e22+21&0+0,0.6+21 */
+	background: -moz-linear-gradient(left, rgba($color-1, $opacity-1) $position-1, rgba($color-2, $opacity-2) $position-2); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba($color-1, $opacity-1) $position-1,rgba($color-2, $opacity-2) $position-2); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba($color-1, $opacity-1) $position-1,rgba($color-2, $opacity-2) $position-2); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

@@ -1,0 +1,24 @@
+{
+  "name": "site-design-library-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MC with vim",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "browser-sync": "^2.8.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-css": "^0.1.0",
+    "gulp-css-globbing": "^0.1.8",
+    "gulp-jekyll": "0.0.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sass-glob": "0.0.8",
+    "nano": "^6.1.5",
+    "node-sass-globbing": "0.0.23"
+  }
+}

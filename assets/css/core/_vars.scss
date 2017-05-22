@@ -1,0 +1,54 @@
+// 	colors
+	// 	brand colors
+
+	// add some brand colours here
+
+	// 	allocated colors
+	$global-bgd: white;
+	$global-text-color: black;
+	$link: blue;
+	$link-active: grey;
+	$link-visited: purple;
+
+// 	sizes
+$base-font-size: 1em;
+$base-line-height: 1.6em;
+$base-rem: 1.4rem;
+	
+// 	breakpoints 					//	Size names from the Mindjammer RPG
+$em-quantum: 					;		//	-3 Elementary particles, Planck-scale entities.
+$em-micro: 						;		//	-2 Nanocells.
+$em-small: 						;		//	-1 Small animals.
+$em-medium: 					;		//	+0 Human beings, most animals.
+$em-large:	 					;		//	+1 Vehicles, starfighters, very large animals.
+$em-huge:							; 	//	+2 Most starships, gigantic animals.
+$em-enormous: 				;		//	+3 Very large starships, capital ships, small cities.
+$em-regional: 				;		//	+4 Metropolises, space stations, asteroids.
+$em-continental: 			;		//	+5 Nations, orbital habs, large asteroids.
+$em-planetary: 				;		//	+6 Planets, plateworlds.
+$em-interplanetary: 	;		//	+7 Solar systems.
+$em-interstellar: 		;		//	+8 Sectors, interstellar civilisations.
+$em-galactic: 				;		//	+9 The Commonality, major interstellar civilisations.
+
+// 	spacing
+$spacing: $base-rem;
+
+//	type
+$type-body: sans-serif;
+$type-heading: $type-body;
+
+// used in _typography.scss
+$heading-sizes: (
+	h1: 2em,
+	h2: 1.8em,
+	h3: 1.2em,
+	h4: 1.1em,
+	h5: 1em,
+	h6: 1em
+);
+
+//	borders
+$global-border: $global-text-color 1px solid;
+
+// shadows
+$global-text-shadow: $global-text-color 0 0 20px;

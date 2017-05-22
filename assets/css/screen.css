@@ -1,0 +1,182 @@
+/* Global reset */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+button, input {
+  line-height: normal;
+  background-color: transparent; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  *overflow: visible; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+/* Techniques from Heydonsan */
+main * + * {
+  margin-top: 1.4rem; }
+
+.ratio-1-1 {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; }
+
+.ratio-4-3 {
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%; }
+
+.ratio-16-9 {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; }
+
+/* Global styles */
+html {
+  font-family: sans-serif;
+  background-color: white;
+  color: black; }
+
+body {
+  font-size: 1em;
+  line-height: 1.6em;
+  position: relative; }
+
+img {
+  width: 100%; }
+
+main header, main section {
+  padding: 1.4rem; }
+
+main section {
+  margin-top: 0; }
+
+a {
+  color: blue;
+  text-decoration: underline;
+  font-family: sans-serif; }
+
+a:hover, a:focus {
+  color: grey; }
+
+.button {
+  width: 100%;
+  text-align: center;
+  padding: 0.7rem;
+  display: block;
+  color: white;
+  border: 2px solid white;
+  border-radius: 0.25em;
+  text-decoration: none; }
+  .button:hover, .button:focus {
+    color: white;
+    background-color: black;
+    border-color: white; }
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  color: black; }
+  h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+    margin-top: 0.7rem; }
+
+h1 {
+  font-size: 2em;
+  line-height: 1em; }
+
+h2 {
+  font-size: 1.8em;
+  line-height: 1em; }
+
+h3 {
+  font-size: 1.2em;
+  line-height: 1em; }
+
+h4 {
+  font-size: 1.1em;
+  line-height: 1em; }
+
+h5 {
+  font-size: 1em;
+  line-height: 1em; }
+
+h6 {
+  font-size: 1em;
+  line-height: 1em; }
+
+main ol, main ul {
+  padding-left: 1.4rem; }
+
+main li {
+  margin-top: 0; }
+
+blockquote {
+  padding: 1.4rem;
+  border-radius: 0.25em; }
+  blockquote cite {
+    font-family: sans-serif;
+    display: block; }
+
+kbd {
+  padding: 0.25em;
+  border: 1px solid white;
+  border-radius: 0.2em; }
+
+.vimeo__wrapper {
+  display: block;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  position: relative; }
+  .vimeo__wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }

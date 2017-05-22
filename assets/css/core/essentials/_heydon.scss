@@ -1,0 +1,18 @@
+/* Techniques from Heydonsan */
+
+// Main selector avoids clash with _reset.scss by upping specificity
+
+main * + * {
+	margin-top: $spacing;
+}
+
+@mixin heydon-grid {
+  display: flex; 	// 1 
+  flex-wrap: wrap; 	// 2 
+  margin: -($base-line-height/2); 	// 5 (edit me!) 
+
+  & > * {
+	  flex: 1 1 10em; 	// 3 (edit me!) 
+	  margin: ($base-line-height/2); 	// 4 (edit me!) 
+	}
+}

@@ -1,0 +1,42 @@
+// Media queries with fallbacks if needed
+// -------------------------------------------------------
+
+// Widths only
+@mixin respond-to($media-min) {
+	@media screen and (min-width: $media-min) {
+	    @content;
+	}
+}
+
+@mixin respond-to-max($media-max) {
+	@media screen and (max-width: $media-max - 1px) {
+	    @content;
+	}
+}
+
+
+@mixin respond-to-min-max($media-min, $media-max) {
+	 @media screen and (min-width: $media-min) and (max-width: $media-max - 1px) {
+	    @content;
+	}
+}
+
+// Widths and heights
+@mixin respond-to-both($media-w-min, $media-h-min) {
+	@media screen and (min-width: $media-w-min) and (min-height: $media-h-min) {
+	    @content;
+	}
+}
+
+// Height
+@mixin respond-to-height($media-min) {
+	@media screen and (min-height: $media-min) {
+	    @content;
+	}
+}
+
+@mixin respond-to-height-max($media-max) {
+	@media screen and (max-height: $media-max - 1px) {
+	    @content;
+	}
+}

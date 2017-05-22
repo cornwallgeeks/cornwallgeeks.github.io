@@ -1,0 +1,19 @@
+// Ratios
+// https://gist.github.com/brianmcallister/2932463
+// -------------------------------------------------------
+
+@mixin maintain-ratio($ratio: 1 1) {
+	//@if length($ratio) < 2 or length($ratio) > 2 { @warn "$ratio must be a list with two values."; }
+	$ratio-width: 100%;
+	$ratio-height: percentage(nth($ratio, 2) / nth($ratio, 1));
+	width: $ratio-width;
+	height: 0;
+	padding-bottom: $ratio-height;
+}
+
+// general purpose ratios
+.ratio-1-1 					    { @include maintain-ratio(1 1); }
+.ratio-4-3 					    { @include maintain-ratio(4 3); }
+.ratio-16-9 			     	{ @include maintain-ratio(16 9); }
+
+// Custom Ratios 

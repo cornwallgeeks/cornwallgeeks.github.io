@@ -1,0 +1,45 @@
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $type-heading;
+	color: $global-text-color;
+
+	+ p {
+		margin-top: $spacing/2;
+	}
+}
+
+// Heading sizes
+
+@each $heading, $size in $heading-sizes {
+	#{$heading} { 
+		font-size : #{$size}; 
+		line-height: 1em;
+	}
+}
+
+main {
+	ol, ul {
+		padding-left: $spacing;
+	}
+
+	li {
+		margin-top: 0;
+	}
+}
+
+blockquote {
+	padding: $spacing;
+	border-radius: 0.25em;
+	
+	cite {
+		font-family: $type-heading;
+		display: block;
+	}
+}
+
+kbd {
+	padding: 0.25em;
+	border: 1px solid $global-bgd;
+	border-radius: 0.2em;
+}

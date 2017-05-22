@@ -1,0 +1,24 @@
+/* Global styles */
+html {
+	font-family: $type-body;
+	background-color: $global-bgd;
+	color: $global-text-color;
+}
+
+body {
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	position: relative;
+}
+
+img {
+	width: 100%;
+}
+
+main header, main section {
+	padding: $spacing;
+}
+
+main section {
+	margin-top: 0;
+}

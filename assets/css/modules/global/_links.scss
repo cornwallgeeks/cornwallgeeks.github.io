@@ -1,0 +1,26 @@
+a {
+	color: $link;
+	text-decoration: underline;
+	font-family: $type-heading;
+}
+
+a:hover, a:focus {
+	color: $link-active;
+}
+
+.button {
+	width: 100%;
+	text-align: center;
+	padding: $spacing/2;
+	display: block;
+	color: white;
+	border: 2px solid white;
+	border-radius: 0.25em;
+	text-decoration: none;
+
+	&:hover, &:focus {
+		color: $global-bgd;
+		background-color: $global-text-color;
+		border-color: $global-bgd;
+	}
+}
