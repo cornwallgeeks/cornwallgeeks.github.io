@@ -1,0 +1,18 @@
+{
+  "name": "cornwallgeeks.github.io",
+  "version": "1.0.0",
+  "description": "Cornwall Geeks is an online & offline community of people that talk about geeky stuff. Programming, design, and gaming are a few examples but there are [many more](https://cornwallgeeks.net/slack).",
+  "scripts": {
+    "update-contrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cornwallgeeks/cornwallgeeks.github.io.git"
+  },
+  "author": "Dan Reeves <hey@danreev.es>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cornwallgeeks/cornwallgeeks.github.io/issues"
+  },
+  "homepage": "https://github.com/cornwallgeeks/cornwallgeeks.github.io#readme"
+}
