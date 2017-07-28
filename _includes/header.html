@@ -3,7 +3,10 @@
     {% if site.logo-image %}
       <img alt="{{ site.name }}" src="{{ site.baseurl }}{{ site.logo-image }}">
     {% else %}
-      {{ site.name }}
+      {% assign words = site.name|split:' ' %}
+      {% for item in words %}
+        <span class="p{{ forloop.index }}">{{ item }}</span>
+      {% endfor %}
     {% endif %}
 
   </a>

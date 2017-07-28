@@ -572,3 +572,29 @@ footer nav {
     margin-left: 10px;
   }
 }
+
+
+
+.website-title span {
+  display: block;
+}
+
+
+.website-title, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Permanent Marker', cursive;
+}
+.p2 {
+    position: relative;
+    top: -11px;
+    left: 3px;
+}
+
+
+// .website-title, h1, h2, h3, h4, h5, h6 {
+//   font-family: 'Knewave', cursive;
+// }
+// .p2 {
+//   position: relative;
+//   top: -8px;
+//   left: 3px;
+// }
